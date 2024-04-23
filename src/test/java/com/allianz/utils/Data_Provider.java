@@ -1,5 +1,8 @@
 package com.allianz.utils;
 
+import java.io.IOException;
+import java.lang.reflect.Method;
+
 import org.testng.annotations.DataProvider;
 
 public class Data_Provider {
@@ -16,6 +19,13 @@ public class Data_Provider {
 		dataSet[1][2] = "Invalid credentials";
 
 		return dataSet;
+	}
+	
+	@DataProvider
+	public Object[][] commonDataProvider(Method mtd) throws IOException{
+		
+		String currentTestName = mtd.getName();
+		return ExcelUtils.getSheetIntoTwoDimensionalArray("src/test/resources/testData/hrm_Data.xlsx", currentTestName);
 	}
 
 }

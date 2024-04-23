@@ -9,24 +9,25 @@ import com.allianz.base.AutomationWrapper;
 import com.allianz.utils.Data_Provider;
 
 public class LoginTest extends AutomationWrapper {
-	@Test
-	public void validLoginTest()
+	
+	@Test(dataProvider = "commonDataProvider",dataProviderClass = Data_Provider.class)
+	public void validLoginTest(String username,String password,String Dashboard)
 	{
-		wd.findElement(By.name("username")).sendKeys("Admin");
+		wd.findElement(By.name("username")).sendKeys(username);
 		//enter password admin123
-		wd.findElement(By.name("password")).sendKeys("admin123");
+		wd.findElement(By.name("password")).sendKeys(password);
 		//click on login
 		wd.findElement(By.xpath(" //button[text()=' Login ']")).click();
 		//Assert the header - Dashboard
 		String text = wd.findElement(By.xpath("//h6[text()='Dashboard']")).getText();
-		Assert.assertEquals(text, "Dashboard");
+		Assert.assertEquals(text, Dashboard);
 		System.out.println(text);
 		
 	}
 
 	
 	
-	@Test(dataProvider = "data",dataProviderClass = Data_Provider.class)
+	@Test(dataProvider = "commonDataProvider",dataProviderClass = Data_Provider.class)
 	public void invalidLoginTest(String username,String password,String errors)
 	{
 		wd.findElement(By.name("username")).sendKeys(username);
