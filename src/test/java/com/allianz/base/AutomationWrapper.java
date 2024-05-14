@@ -19,9 +19,9 @@ public class AutomationWrapper {
 		wd.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 	}
 
-	@AfterMethod
-	public void tearDown() {
-		wd.quit();
-	}
+//	@AfterMethod
+//	public void tearDown() {
+//		wd.quit();
+//	}
 
 }

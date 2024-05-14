@@ -21,5 +21,10 @@ public class WebDriverKeywords {
 	public void clickElement(By locator) {
 		driver.findElement(locator).click();
 	}
+	
+	public void getText(By locator) {
+		String text = driver.findElement(locator).getText();
+		System.out.println(text);
+	}
 
 }

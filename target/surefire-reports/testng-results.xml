@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-05-03T00:23:46 PDT" name="Surefire suite" finished-at="2024-05-03T00:25:36 PDT" duration-ms="109479">
+    <groups>
+    </groups>
+    <test started-at="2024-05-03T00:23:46 PDT" name="Surefire test" finished-at="2024-05-03T00:25:36 PDT" duration-ms="109479">
+      <class name="com.allianz.test.AddEmployeeTest">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.allianz.test.AddEmployeeTest@1eb5174b]" started-at="2024-05-03T00:23:49 PDT" name="launchBrowser" finished-at="2024-05-03T00:23:57 PDT" duration-ms="8411" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="addEmployeeTest(java.lang.String,java.lang.String)[pri:0, instance:com.allianz.test.AddEmployeeTest@1eb5174b]" started-at="2024-05-03T00:23:57 PDT" name="addEmployeeTest" data-provider="commonDataProvider" finished-at="2024-05-03T00:24:11 PDT" duration-ms="14230" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmployeeTest -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.allianz.test.AddEmployeeTest@1eb5174b]" started-at="2024-05-03T00:24:11 PDT" name="launchBrowser" finished-at="2024-05-03T00:24:21 PDT" duration-ms="9596" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="uploadInvalidPictureTest()[pri:0, instance:com.allianz.test.AddEmployeeTest@1eb5174b]" started-at="2024-05-03T00:24:21 PDT" name="uploadInvalidPictureTest" finished-at="2024-05-03T00:24:29 PDT" duration-ms="8278" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uploadInvalidPictureTest -->
+      </class> <!-- com.allianz.test.AddEmployeeTest -->
+      <class name="com.allianz.test.LoginUITest">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.allianz.test.LoginUITest@bd4dc25]" started-at="2024-05-03T00:25:12 PDT" name="launchBrowser" finished-at="2024-05-03T00:25:28 PDT" duration-ms="16152" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="getVersionTest()[pri:0, instance:com.allianz.test.LoginUITest@bd4dc25]" started-at="2024-05-03T00:25:28 PDT" name="getVersionTest" finished-at="2024-05-03T00:25:29 PDT" duration-ms="1147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getVersionTest -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.allianz.test.LoginUITest@bd4dc25]" started-at="2024-05-03T00:25:29 PDT" name="launchBrowser" finished-at="2024-05-03T00:25:36 PDT" duration-ms="6813" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="titleTest()[pri:0, instance:com.allianz.test.LoginUITest@bd4dc25]" started-at="2024-05-03T00:25:36 PDT" name="titleTest" finished-at="2024-05-03T00:25:36 PDT" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- titleTest -->
+      </class> <!-- com.allianz.test.LoginUITest -->
+      <class name="com.allianz.test.LoginTest">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.allianz.test.LoginTest@4efc180e]" started-at="2024-05-03T00:24:29 PDT" name="launchBrowser" finished-at="2024-05-03T00:24:35 PDT" duration-ms="6056" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="invalidLoginTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.allianz.test.LoginTest@4efc180e]" started-at="2024-05-03T00:24:35 PDT" name="invalidLoginTest" data-provider="commonDataProvider" finished-at="2024-05-03T00:24:38 PDT" duration-ms="2497" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sam]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sam123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid credentials]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLoginTest -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.allianz.test.LoginTest@4efc180e]" started-at="2024-05-03T00:24:38 PDT" name="launchBrowser" finished-at="2024-05-03T00:24:45 PDT" duration-ms="6857" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="invalidLoginTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.allianz.test.LoginTest@4efc180e]" started-at="2024-05-03T00:24:45 PDT" name="invalidLoginTest" data-provider="commonDataProvider" finished-at="2024-05-03T00:24:48 PDT" duration-ms="3165" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[john]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[john123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid credentials]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLoginTest -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.allianz.test.LoginTest@4efc180e]" started-at="2024-05-03T00:24:48 PDT" name="launchBrowser" finished-at="2024-05-03T00:24:55 PDT" duration-ms="6624" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="validLoginTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.allianz.test.LoginTest@4efc180e]" started-at="2024-05-03T00:24:55 PDT" name="validLoginTest" data-provider="commonDataProvider" finished-at="2024-05-03T00:24:59 PDT" duration-ms="4169" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Dashboard]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginTest -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.allianz.test.LoginTest@4efc180e]" started-at="2024-05-03T00:24:59 PDT" name="launchBrowser" finished-at="2024-05-03T00:25:08 PDT" duration-ms="8717" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="validLoginTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.allianz.test.LoginTest@4efc180e]" started-at="2024-05-03T00:25:08 PDT" name="validLoginTest" data-provider="commonDataProvider" finished-at="2024-05-03T00:25:12 PDT" duration-ms="3951" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Dashboard]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginTest -->
+      </class> <!-- com.allianz.test.LoginTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
